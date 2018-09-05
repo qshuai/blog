@@ -1,200 +1,232 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="yanm1ng&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
   
-  <title>Hexo</title>
-  <meta name="author" content="qshuai">
+    <link rel="shortcut icon" href="/css/images/logo.png">
+  
+  <title>
+    
+      Hexo
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
 
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
   
-  <meta property="og:site_name" content="Hexo"/>
 
-  
-    <meta property="og:image" content=""/>
-  
-
-  <link href="/favicon.png" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
 
 </head>
-
-
-<body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Hexo</a></h1>
-  <h2><a href="/"></a></h2>
+<div class="wechat-share">
+  <img src="/css/images/logo.png" />
 </div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Hexo</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link active">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link mobile-active">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
 </header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2018-09-05T07:18:37.000Z"><a href="/2018/09/05/Stratum-protocol-document/">2018-09-05</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2018/09/05/Stratum-protocol-document/">Stratum protocol document</a></h1>
-  
 
-    </header>
-    <div class="entry">
-      
-        <h1 id="Stratum-Mining-Protocol"><a href="#Stratum-Mining-Protocol" class="headerlink" title="Stratum Mining Protocol"></a>Stratum Mining Protocol</h1><p>This is the description of stratum protocol used in this pool.</p>
-<p>Stratum defines simple exception handling. Example of rejected share looks like:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">23</span>, <span class="attr">message</span>: <span class="string">"Invalid share"</span> &#125; &#125;</span><br></pre></td></tr></table></figure>
-<p>Each response with exception is followed by disconnect.</p>
-<h2 id="Authentication"><a href="#Authentication" class="headerlink" title="Authentication"></a>Authentication</h2><p>Request looks like:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"id"</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>,</span><br><span class="line">  <span class="string">"method"</span>: <span class="string">"login"</span>,</span><br><span class="line">  <span class="string">"params"</span>: [<span class="string">"44G9BLzQUXXa2JXcqJ7VBFG5zsTt3Czch5vQxxzqBM1SH58Q1dGLTLgMqA6ci54BEuGLVSTvDYWp2gJd8s5xgTwZTesv1vG"</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Request can include additional 2nd param (email for example):</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"id"</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>,</span><br><span class="line">  <span class="string">"method"</span>: <span class="string">"login"</span>,</span><br><span class="line">  <span class="string">"params"</span>: [<span class="string">"44G9BLzQUXXa2JXcqJ7VBFG5zsTt3Czch5vQxxzqBM1SH58Q1dGLTLgMqA6ci54BEuGLVSTvDYWp2gJd8s5xgTwZTesv1vG"</span>, <span class="string">"admin@example.net:001"</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Successful response:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">true</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>Exceptions:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">-1</span>, <span class="attr">message</span>: <span class="string">"Invalid login"</span> &#125; &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Request-For-Job"><a href="#Request-For-Job" class="headerlink" title="Request For Job"></a>Request For Job</h2><p>Request looks like:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"method"</span>: <span class="string">"getwork"</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>Successful response:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"id"</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>,</span><br><span class="line">  <span class="string">"result"</span>: [</span><br><span class="line">     <span class="string">"1"</span>,<span class="comment">//JobId</span></span><br><span class="line">     <span class="string">"01029af88cb70568b84a11dc9406ace9e635918ca03b008f7728b9726b327c1b482a98d81ed83000000000018bd03c01ffcfcf3c0493d7cec7020278dfc296544f139394e5e045fcda1ba2cca5b69b39c9ddc90b7e0de859fdebdc80e8eda1ba01029c5d518ce3cc4de26364059eadc8220a3f52edabdaf025a9bff4eec8b6b50e3d8080dd9da417021e642d07a8c33fbe497054cfea9c760ab4068d31532ff0fbb543a7856a9b78ee80c0f9decfae01023ef3a7182cb0c260732e7828606052a0645d3686d7a03ce3da091dbb2b75e5955f01ad2af83bce0d823bf3dbbed01ab219250eb36098c62cbb6aa2976936848bae53023c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f12d7c87346d6b84e17680082d9b4a1d84e36dd01bd2c7f3b3893478a8d88fb3"</span>,<span class="comment">//Blob</span></span><br><span class="line">     <span class="string">"7b5e0400"</span> ,<span class="comment">//Target</span></span><br><span class="line">   ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Exceptions:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">10</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">0</span>, <span class="attr">message</span>: <span class="string">"Work not ready"</span> &#125; &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="New-Job-Notification"><a href="#New-Job-Notification" class="headerlink" title="New Job Notification"></a>New Job Notification</h2><p>Server sends job to peers if new job is available:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>,</span><br><span class="line">  <span class="string">"result"</span>: [</span><br><span class="line">       <span class="string">"1"</span>,<span class="comment">//JobId</span></span><br><span class="line">       <span class="string">"01029af88cb70568b84a11dc9406ace9e635918ca03b008f7728b9726b327c1b482a98d81ed83000000000018bd03c01ffcfcf3c0493d7cec7020278dfc296544f139394e5e045fcda1ba2cca5b69b39c9ddc90b7e0de859fdebdc80e8eda1ba01029c5d518ce3cc4de26364059eadc8220a3f52edabdaf025a9bff4eec8b6b50e3d8080dd9da417021e642d07a8c33fbe497054cfea9c760ab4068d31532ff0fbb543a7856a9b78ee80c0f9decfae01023ef3a7182cb0c260732e7828606052a0645d3686d7a03ce3da091dbb2b75e5955f01ad2af83bce0d823bf3dbbed01ab219250eb36098c62cbb6aa2976936848bae53023c00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001f12d7c87346d6b84e17680082d9b4a1d84e36dd01bd2c7f3b3893478a8d88fb3"</span>,<span class="comment">//Blob</span></span><br><span class="line">       <span class="string">"7b5e0400"</span> ,<span class="comment">//Target</span></span><br><span class="line">   ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="Share-Submission"><a href="#Share-Submission" class="headerlink" title="Share Submission"></a>Share Submission</h2><p>Request looks like:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"id"</span>: <span class="number">1</span>,</span><br><span class="line">  <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>,</span><br><span class="line">  <span class="string">"method"</span>: <span class="string">"submit"</span>,</span><br><span class="line">  <span class="string">"params"</span>: [</span><br><span class="line">    <span class="string">""</span>, <span class="comment">//Id</span></span><br><span class="line">    <span class="string">"1"</span>, <span class="comment">//JobId</span></span><br><span class="line">    <span class="string">"800000000"</span>, <span class="comment">//Nonce</span></span><br><span class="line">    <span class="string">"22952878a8025f97cda798821740b968227f19a0cabcba7043180fe5b3c8cc28"</span>, <span class="comment">//Result</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Request can include optional <code>worker</code> param:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"worker"</span>: <span class="string">"rig-1"</span> <span class="comment">/* ... */</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>Response:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">true</span> &#125;</span><br><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">false</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>Exceptions:</p>
-<p>Pool MAY return exception on invalid share submission usually followed by temporal ban.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">23</span>, <span class="attr">message</span>: <span class="string">"Invalid share"</span> &#125; &#125;</span><br><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">22</span>, <span class="attr">message</span>: <span class="string">"Duplicate share"</span> &#125; &#125;</span><br><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">-1</span>, <span class="attr">message</span>: <span class="string">"High rate of invalid shares"</span> &#125; &#125;</span><br><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">25</span>, <span class="attr">message</span>: <span class="string">"Not subscribed"</span> &#125; &#125;</span><br><span class="line">&#123; <span class="string">"id"</span>: <span class="number">1</span>, <span class="string">"jsonrpc"</span>: <span class="string">"2.0"</span>, <span class="string">"result"</span>: <span class="literal">null</span>, <span class="string">"error"</span>: &#123; <span class="attr">code</span>: <span class="number">-1</span>, <span class="attr">message</span>: <span class="string">"Malformed PoW result"</span> &#125; &#125;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer>
+    <main class="app-body">
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2018/09/05/Stratum-protocol-document/">Stratum protocol document</a>
+      </h2>
+      <p class="article-date">September 5, 2018</p>
       
         
+  <a href="/tags#mining" >
+    <span class="tag-code">mining</span>
+  </a>
+
+      
+      <div class="article-summary">
         
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2018-09-05T05:50:33.264Z"><a href="/2018/09/05/hello-world/">2018-09-05</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2018/09/05/hello-world/">Hello World</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer>
-      
+          Stratum Mining ProtocolThis is the description of stratum protocol used in this pool.
+Stratum defines simple exception handling. Example of reject ...
         
-        
+      </div>
+      <a class="more" href="/2018/09/05/Stratum-protocol-document/">Read more</a>
+    </article>
+  
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2018/09/05/hello-world/">Hello World</a>
+      </h2>
+      <p class="article-date">September 5, 2018</p>
       
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
+      <div class="article-summary">
+        
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer ...
+        
+      </div>
+      <a class="more" href="/2018/09/05/hello-world/">Read more</a>
+    </article>
   
+
   
-  <div class="clearfix"></div>
-</nav></div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:qshuai.github.io">
-  </form>
+</main>
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
 </div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2018 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
 
-  
-
-  
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/mining/">mining</a><small>1</small></li>
-  
-  </ul>
-</div>
-
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2018 qshuai
-  
-</div>
-<div class="clearfix"></div></footer>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
 </script>
 
-</body>
+<script>
+  var hasLine = 'true';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
+  </body>
 </html>
